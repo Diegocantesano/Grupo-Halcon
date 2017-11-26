@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Mediacion : MonoBehaviour {
+
+	// rehenes para salvar
+
 
 	// el reloj
 	public float TiempoRestante = 900;
@@ -49,6 +53,7 @@ public class Mediacion : MonoBehaviour {
 	public GameObject Texto;
 	public GameObject Nombre;
 
+
 	void Update()
 	{
 		// reloj en decresimiento
@@ -57,8 +62,7 @@ public class Mediacion : MonoBehaviour {
 		// transforma el float en un int y me permite verlo en pantalla
 		tiempo = (int)TiempoRestante;
 		RELOJ.text = " " + tiempo;
-
-		// tiempo para la primera mediacion
+			// tiempo para la primera mediacion
 		if (tiempo ==  890)
 		{	
 		Texto.SetActive(true);
@@ -355,6 +359,7 @@ public class Mediacion : MonoBehaviour {
 			Nombre.SetActive(false);
 			nextbutton.SetActive(false);
 			// AGREGAR IMAGEN DE GAME OVER////////////////////////////////////////
+			Application.LoadLevel ("Derrota");
 		}	
 		if(Dialogo == 55) // Mediador - charla 2 - 08 B
 		{
@@ -536,6 +541,7 @@ public class Mediacion : MonoBehaviour {
 			Nombre.SetActive(false);
 			nextbutton.SetActive(false);
 			/// IR A PANTALLA DE VICTORIA
+			Application.LoadLevel ("Ganaste");
 		}	
 	}
 	
