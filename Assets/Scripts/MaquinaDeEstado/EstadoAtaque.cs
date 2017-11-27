@@ -12,13 +12,14 @@ public class EstadoAtaque : MonoBehaviour {
     public float TiempoBuscando;
     private ControladorVision ControladorVision;
 
-	void Awake ()
+
+	void Start ()
     {
         MaquinaDeEstados = GetComponent<CentralMaquina>();
         ControladorNavMesh = GetComponent<ControladorNavMesh>();
         ControladorVision = GetComponent<ControladorVision>();
-
-	}
+        
+    }
 
     // Update is called once per frame
     private void OnEnable()

@@ -12,9 +12,10 @@ public class CentralMaquina : MonoBehaviour {
 
     public MeshRenderer Indicador;
 
-	void Start ()
+	void Awake ()
     {
         ActivarUnEstado(EstadoInicial);
+     
 	}
 	
 	// Update is called once per frame

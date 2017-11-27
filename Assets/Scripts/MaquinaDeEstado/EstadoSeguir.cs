@@ -13,6 +13,7 @@ public class EstadoSeguir : MonoBehaviour {
         MaquinaDeEstados = GetComponent<CentralMaquina>();
         ControladorNavMesh = GetComponent<ControladorNavMesh>();
         ControladorVision = GetComponent<ControladorVision>();
+       
 	}
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class EstadoSeguir : MonoBehaviour {
     void Update ()
     {
         RaycastHit hit;
+        
         if (!ControladorVision.LoVemos(out hit, true))
         {
             MaquinaDeEstados.ActivarUnEstado(MaquinaDeEstados.EstadoAtaque);

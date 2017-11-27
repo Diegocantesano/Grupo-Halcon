@@ -10,8 +10,12 @@ public class EstadoPatrulla : MonoBehaviour {
     private CentralMaquina MaquinaDeEstados;
     private ControladorVision ControladorVision;
     public Color ColorDelEstado = Color.cyan;
+    public float distancia;
+    public Transform PJ;
+   
 
-	void Awake ()
+    
+    void Awake ()
     {
         ControladorNavMesh = GetComponent<ControladorNavMesh>();
         MaquinaDeEstados = GetComponent<CentralMaquina>();
@@ -35,6 +39,13 @@ public class EstadoPatrulla : MonoBehaviour {
             MaquinaDeEstados.ActivarUnEstado(MaquinaDeEstados.EstadoSeguir);
             return;
         }
+        distancia = Vector3.Distance(PJ.position, transform.position);
+      if(distancia <= 3)
+        {
+            MaquinaDeEstados.ActivarUnEstado(MaquinaDeEstados.EstadoAtaque);
+           
+        }
+
 	}
     //OnEnable actua cada vez que el scrip se activa
     private void OnEnable()
@@ -51,11 +62,5 @@ public class EstadoPatrulla : MonoBehaviour {
         ControladorNavMesh.ActualizarPuntoDestino(WayPoints[SiguientePunto].position);
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player") && enabled)
-        {
-            MaquinaDeEstados.ActivarUnEstado(MaquinaDeEstados.EstadoAtaque);
-        }
-    }
+   
 }

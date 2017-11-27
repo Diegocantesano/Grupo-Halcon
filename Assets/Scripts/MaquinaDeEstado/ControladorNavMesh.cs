@@ -7,7 +7,7 @@ public class ControladorNavMesh : MonoBehaviour {
 
     [HideInInspector]//Ocultar en el inspector.
 
-    public NavMeshAgent NavMeshAgent;
+    private NavMeshAgent NavMeshAgent;
     public Transform PosicionDelProta;
 	void Awake ()
     {
@@ -21,9 +21,10 @@ public class ControladorNavMesh : MonoBehaviour {
         NavMeshAgent.isStopped = false; //Le digo que continue su recorrido.
 	}
 
-    public void DetenerRecorridaYGirar ()
+    public void DetenerRecorridaYGirar()
     {
         NavMeshAgent.isStopped = true;
+
     }
 
     public bool LLegamos ()
