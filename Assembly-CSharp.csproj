@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A9DE3B74-8E7C-A465-19D4-C979F303D20D}</ProjectGuid>
+    <ProjectGuid>{4D5FCB78-AEB3-6D19-CAC3-4E375DC5943D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,7 +56,9 @@
      <Compile Include="Assets\EnemyMana.cs" />
      <Compile Include="Assets\Mediacion\Mediacion.cs" />
      <Compile Include="Assets\Mediacion\TalkTalk.cs" />
+     <Compile Include="Assets\menuinicio.cs" />
      <Compile Include="Assets\NivelGanadorRehenes.cs" />
+     <Compile Include="Assets\RegresarMenu.cs" />
      <Compile Include="Assets\Rehenes.cs" />
      <Compile Include="Assets\Scripts\ManagerCombate.cs" />
      <Compile Include="Assets\Scripts\MaquinaDeEstado\CentralMaquina.cs" />
