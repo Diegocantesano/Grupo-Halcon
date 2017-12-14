@@ -85,6 +85,7 @@
     <Compile Include="Assets\Mediacion\TalkTalk.cs" />
     <Compile Include="Assets\menuinicio.cs" />
     <Compile Include="Assets\NivelGanadorRehenes.cs" />
+    <Compile Include="Assets\RegresarMenu.cs" />
     <Compile Include="Assets\Rehenes.cs" />
     <Compile Include="Assets\Scripts\ManagerCombate.cs" />
     <Compile Include="Assets\Scripts\MaquinaDeEstado\CentralMaquina.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\Scripts\MaquinaDeEstado\EstadoPatrulla.cs" />
     <Compile Include="Assets\Scripts\MaquinaDeEstado\EstadoSeguir.cs" />
     <Compile Include="Assets\Scripts\Moverse.cs" />
+    <Compile Include="Assets\Scripts\SelectorDePersonajes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MasModelosDePolis\ReadMe.txt.txt" />

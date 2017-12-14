@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo-Halcon", "Assembly-CSharp.csproj", "{4D5FCB78-AEB3-6D19-CAC3-4E375DC5943D}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo-Halcon", "Grupo-Halcon.csproj", "{EB783B2C-B9F1-9A78-344D-86314460CAF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D5FCB78-AEB3-6D19-CAC3-4E375DC5943D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D5FCB78-AEB3-6D19-CAC3-4E375DC5943D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D5FCB78-AEB3-6D19-CAC3-4E375DC5943D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D5FCB78-AEB3-6D19-CAC3-4E375DC5943D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB783B2C-B9F1-9A78-344D-86314460CAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB783B2C-B9F1-9A78-344D-86314460CAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB783B2C-B9F1-9A78-344D-86314460CAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB783B2C-B9F1-9A78-344D-86314460CAF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
